@@ -22,9 +22,17 @@ for study ethereum & solidity
     ```
 1. Deploy smart contract
     ```shell
+    # to localhost:7545
     yarn deploy
+
+    # to rinkeby
+    yarn deploy --network rinkeby
     ```
 1. Start web server & check http://localhost:3000
     ```shell
     yarn dev
     ```
+
+## Rinkeby Transaction Hash
+
+`0x5B7E70F2b01999Eaf5aE56c945281b9A66D3A0Ae`
