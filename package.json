@@ -7,9 +7,11 @@
     "test": "test"
   },
   "scripts": {
-    "deploy": "truffle compile && truffle migrate",
+    "deploy:contract": "truffle compile && truffle migrate",
     "dev": "lite-server",
-    "test": "truffle test"
+    "test": "truffle test",
+    "build:website": "cp -r src/ dist/ && cp -r build/contracts/* dist/",
+    "deploy:website": "yarn build:website && ipfs add -r dist/"
   },
   "author": "",
   "license": "ISC",
